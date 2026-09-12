@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "RotaPlan_AndroidIDE_Duzeltilmis.zip"
+      - "RotaPlan_AndroidIDE_Duzeltilmis_duzeltilmis.zip"
       - ".github/workflows/build-apk.yml"
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
         run: |
           rm -rf project
           mkdir project
-          unzip -q RotaPlan_AndroidIDE_Duzeltilmis.zip -d project
+          unzip -q RotaPlan_AndroidIDE_Duzeltilmis_duzeltilmis.zip -d project
           rm -f project/gradle/wrapper/gradle-wrapper.jar
           rm -f project/gradlew project/gradlew.bat
 
